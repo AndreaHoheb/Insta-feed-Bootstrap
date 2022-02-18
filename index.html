@@ -12,71 +12,60 @@
 </head>
 
 <body>
-    <div class="container-fluid">
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">
-                        <i class="bi bi-instagram"></i>Insta-Cool</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="bi bi-instagram"></i>Insta-Cool</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="d-flex ms-auto">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Create New Post
                     </button>
-                </div>
-                <!-- Button trigger modal -->
-                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    Create New Post
-                </button>
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-body">
-                                <div class="form-group">
-                                    <label for="exampleFormControlTextarea1"></label>
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <div class="form-group">
+                                        <label for="exampleFormControlTextarea1"></label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1"
+                                            rows="3"></textarea>
+                                    </div>
+                                    <i class="bi bi-camera-fill"></i>
+                                    <i class="bi bi-geo-alt-fill"></i>
                                 </div>
-                                <i class="bi bi-camera-fill"></i>
-                                <i class="bi bi-geo-alt-fill"></i>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save changes</button>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <nav class="navbar navbar-light bg-light">
-                    <div class="container-fluid">
-                        <form class="d-flex">
-                            <div>
-                                <div class="collapse navbar-collapse" id="navbarScroll">
-                                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
-                                        style="--bs-scroll-height: 100px;">
-                                        <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown"
-                                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                <i class="bi bi-gear-fill"></i>
-                                            </a>
-                                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                                                <li><a class="dropdown-item" href="#">Settings</a></li>
-                                                <li><a class="dropdown-item" href="#">Profile Settings</a></li>
-                                                <li>
-                                                    <hr class="dropdown-divider">
-                                                </li>
-                                                <li><a class="dropdown-item" href="#">Log Out</a></li>
-                                            </ul>
-                                        </li>
-                                </div>
-                            </div>
-                        </form>
+                    <!-- dropdown  -->
+                    <div class="btn-group">
+                        <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="bi bi-gear-fill"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><button class="dropdown-item" type="button">Action</button></li>
+                            <li><button class="dropdown-item" type="button">Another action</button></li>
+                            <li><button class="dropdown-item" type="button">Something else here</button></li>
+                        </ul>
                     </div>
-                </nav>
-    </div>
+                </div>
+            </div>
+        </div>
     </nav>
-    </header>
+    <!-- page content -->
     <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist" style="justify-content: center;">
         <li class="nav-item" role="presentation">
             <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
@@ -104,18 +93,18 @@
                             <i class="bi bi-chat"></i>
                             <p class="card-text"> I believe in Gon and Killua Supremacy</p>
                             <div class="card footer">
-                                <i class="bi bi-three-dots-vertical"></i>
-                                <i class="bi bi-heart"></i>
-                            <form>
-                                <div class="form-group row">
-                                    <div class="col-sm-10">
+                                <div class="d-flex">
+                                    <div class="w-75">
                                         <input type="email" class="form-control form-control-sm" id="colFormLabelSm"
                                             placeholder="Comment...">
                                     </div>
+                                    <div class="ms-auto">
+                                        <i class="bi bi-three-dots-vertical"></i>
+                                        <i class="bi bi-heart"></i>
+                                    </div>
                                 </div>
-                            </form>
+                            </div>
                         </div>
-                    </div>
                     </div>
                     <div class="card my-4" style="width: 30rem;">
                         <img src="https://res.cloudinary.com/teepublic/image/private/s--yTWCHRin--/c_crop,x_10,y_10/c_fit,h_846/c_crop,g_north_west,h_1007,w_1007,x_-274,y_-81/l_upload:v1507037313:production:blanks:n2pk899a8qrzxtz4tyvn/fl_layer_apply,g_north_west,x_-401,y_-212/b_rgb:ffffff/c_limit,f_jpg,h_630,q_90,w_630/v1563436702/production/designs/5346414_0.jpg"
