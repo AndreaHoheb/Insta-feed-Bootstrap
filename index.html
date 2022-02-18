@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <i class="bi bi-instagram"></i>Insta-Cool</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Create New Post
+                </button>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <div class="form-group">
+                                    <label for="exampleFormControlTextarea1"></label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                </div>
+                                <i class="bi bi-camera-fill"></i>
+                                <i class="bi bi-geo-alt-fill"></i>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <nav class="navbar navbar-light bg-light">
+                    <div class="container-fluid">
+                        <form class="d-flex">
+                            <div>
+                                <div class="collapse navbar-collapse" id="navbarScroll">
+                                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+                                        style="--bs-scroll-height: 100px;">
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown"
+                                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <i class="bi bi-gear-fill"></i>
+                                            </a>
+                                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                                <li><a class="dropdown-item" href="#">Settings</a></li>
+                                                <li><a class="dropdown-item" href="#">Profile Settings</a></li>
+                                                <li>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item" href="#">Log Out</a></li>
+                                            </ul>
+                                        </li>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </nav>
+    </div>
+    </nav>
+    </header>
+    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist" style="justify-content: center;">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+                <i class="bi bi-square"></i>
+            </button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+                <i class="bi bi-grid-3x3-gap"></i>
+            </button>
+        </li>
+    </ul>
+    <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+            <div class="card-group">
+                <div class="mx-auto my-5 justify-center" style="width: 18rem;">
+                    <div class="card my-4" style="width: 30rem;">
+                        <img src="https://sportshub.cbsistatic.com/i/2021/04/21/7516af50-994d-48c2-8749-0ce535b4f993/hunter-x-hunter-tattoo-1264531.jpg"
+                            class="img-thumbnail" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Best People You Know</h5>
+                            <i class="bi bi-suit-heart-fill"></i>
+                            <i class="bi bi-chat"></i>
+                            <p class="card-text"> I believe in Gon and Killua Supremacy</p>
+                            <div class="card footer">
+                                <i class="bi bi-three-dots-vertical"></i>
+                                <i class="bi bi-heart"></i>
+                            <form>
+                                <div class="form-group row">
+                                    <div class="col-sm-10">
+                                        <input type="email" class="form-control form-control-sm" id="colFormLabelSm"
+                                            placeholder="Comment...">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card my-4" style="width: 30rem;">
+                        <img src="https://res.cloudinary.com/teepublic/image/private/s--yTWCHRin--/c_crop,x_10,y_10/c_fit,h_846/c_crop,g_north_west,h_1007,w_1007,x_-274,y_-81/l_upload:v1507037313:production:blanks:n2pk899a8qrzxtz4tyvn/fl_layer_apply,g_north_west,x_-401,y_-212/b_rgb:ffffff/c_limit,f_jpg,h_630,q_90,w_630/v1563436702/production/designs/5346414_0.jpg"
+                            class="img-thumbnail" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"> Your momma</h5>
+                            <i class="bi bi-suit-heart-fill"></i>
+                            <i class="bi bi-chat"></i>
+                            <p class="card-text"> Andrea no esta en la casa</p>
+                            <a href="#" class="btn btn-primary">Beam Me Up Scotty</a>
+                        </div>
+                    </div>
+                    <div class="card my-4" style="width: 30rem;">
+                        <img src="https://m.lovethispic.com/uploaded_images/blogs/30-Very-Funny-Selfie-Pictures-4721-29.jpg"
+                            class="img-thumbnail" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Your best friend</h5>
+                            <i class="bi bi-suit-heart-fill"></i>
+                            <i class="bi bi-chat"></i>
+                            <p class="card-text">Y'all ever cry and fart at the same time</p>
+                            <a href="#" class="btn btn-primary">Beam Me Up Scotty</a>
+                        </div>
+                    </div>
+                    <div class="card my-4" style="width: 30rem;">
+                        <img src="https://orlandosolution.com/wp-content/uploads/2020/08/IG-aestdolls.jpg"
+                            class="img-thumbnail" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"> That Girl You Found on Tik Tok</h5>
+                            <i class="bi bi-suit-heart-fill"></i>
+                            <i class="bi bi-chat"></i>
+                            <p class="card-text">Sponsered by Sephora</p>
+                            <a href="#" class="btn btn-primary">Beam Me Up Scotty</a>
+                        </div>
+                    </div>
+                    <div class="card my-4" style="width: 30rem;">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/0/08/ItGirl.jpg" class="img-thumbnail"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"> Your literal worst enemy or nightmare </h5>
+                            <i class="bi bi-suit-heart-fill"></i>
+                            <i class="bi bi-chat"></i>
+                            <p class="card-text"> IITTSSS JASSONNNN DERULLLOOO.</p>
+                            <a href="#" class="btn btn-primary">Beam Me Up Scotty</a>
+                        </div>
+                    </div>
+                    <div class="card my-4" style="width: 30rem;">
+                        <img src="https://w0.peakpx.com/wallpaper/279/187/HD-wallpaper-where-country-grows-etheral-women-floral-fashion-women-are-special-womens-wardrobe-female-trendsetters-album-the-wow-factor-southern-fried-chicks-grandma-gingerbread-surreal-creative-art.jpg"
+                            class="img-thumbnail" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"> That Person Who Was Cool In HS</h5>
+                            <i class="bi bi-suit-heart-fill"></i>
+                            <i class="bi bi-chat"></i>
+                            <p class="card-text"> My inspiration for this post was based on my high school in the middle
+                                of
+                                nowhere PA </p>
+                            <a href="#" class="btn btn-primary">Beam Me Up Scotty</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <img src="https://sportshub.cbsistatic.com/i/2021/04/21/7516af50-994d-48c2-8749-0ce535b4f993/hunter-x-hunter-tattoo-1264531.jpg"
+                        class="img-thumbnail" alt="...">
+                </div>
+                <div class="col">
+                    <img src="https://res.cloudinary.com/teepublic/image/private/s--yTWCHRin--/c_crop,x_10,y_10/c_fit,h_846/c_crop,g_north_west,h_1007,w_1007,x_-274,y_-81/l_upload:v1507037313:production:blanks:n2pk899a8qrzxtz4tyvn/fl_layer_apply,g_north_west,x_-401,y_-212/b_rgb:ffffff/c_limit,f_jpg,h_630,q_90,w_630/v1563436702/production/designs/5346414_0.jpg"
+                        class="img-thumbnail" alt="...">
+                </div>
+                <div class="col">
+
+                    <img src="https://m.lovethispic.com/uploaded_images/blogs/30-Very-Funny-Selfie-Pictures-4721-29.jpg"
+                        class="img-thumbnail" alt="...">
+                </div>
+                <div class="col">
+
+                    <img src="https://upload.wikimedia.org/wikipedia/en/0/08/ItGirl.jpg" class="img-thumbnail"
+                        alt="...">
+                </div>
+
+                <div class="col">
+                    <img src="https://w0.peakpx.com/wallpaper/279/187/HD-wallpaper-where-country-grows-etheral-women-floral-fashion-women-are-special-womens-wardrobe-female-trendsetters-album-the-wow-factor-southern-fried-chicks-grandma-gingerbread-surreal-creative-art.jpg"
+                        class="img-thumbnail" alt="...">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
